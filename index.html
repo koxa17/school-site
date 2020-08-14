@@ -29,260 +29,290 @@
   </head>
 
   <body>
-
     <!-- Side navigation -->
-    <div class="container pt-3 pb-3 d-flex">
-      <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-7 pr-2 ">
+    <div class="container pt-3 pb-3">
+      <div class="row d-flex flex-column-reverse flex-sm-row">
+        <div class="col-lg-8 col-md-8 col-sm-7 col-12 pr-2">
           <main class="main p-3 w-100 mb-3">
-              <div class="top d-flex justify-content-between align-items-center pb-3">
+            <div class="row top d-flex justify-content-between align-items-center pb-3">
+              <div class="col-lg-6 col-md-5 col-12 text-center mb-sm-3">
                 <h1 class="title m-0">Личный кабинет</h1>
+              </div>
 
-                <div class="teacher d-flex justify-content-between align-items-center mr-2">
+              <div
+                class="col-lg-6 col-md-7 col-12 d-flex justify-content-center justify-content-md-end align-items-center"
+              >
+                <div class="teacher d-flex align-items-center mr-2">
                   <div class="teacher__avatar mr-3">
                     <i class="fas fa-user-graduate"></i>
                   </div>
 
                   <div class="teacher-info d-flex flex-column">
-                    <div class="teacher__name">Преподаватель <span id="teacher__name">Роман</span> </div>
+                    <div class="teacher__name">
+                      Преподаватель <span id="teacher__name">Роман</span>
+                    </div>
                     <div class="teacher__link">
-                      <ul class="link__list d-flex justify-content-between align-items-center">
+                      <ul
+                        class="link__list d-flex justify-content-between align-items-center"
+                      >
                         <li class="link__item"><a href="#">В профиль</a></li>
                         <span class="circle"></span>
                         <li class="link__item"><a href="#">Сменить</a></li>
                       </ul>
-                    </div> 
-                  </div>
-                </div>
-              </div>
-              <div class="main__content pt-4 pb-4">
-                <div class="row d-flex align-items-stretch">
-                  <div class="col-md-8">
-                    <div class="back-to-lessons p-2">
-                      <h4 class="mb-2">Готовы ли вы вернуться к занятиям?</h4>
-                      <p class="mb-3">Вы временно приостановили обучение в школе. Мы с радостью поможем продолжить ваше движение к поставленным целям!</p>
-                      <button type="button" class="btn btn-primary" id="back-to-lessons">Вернуться к занятиям!</button>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="lessons p-2 mb-2 h-100">
-                      <div class="lessons__info mb-3">
-                        <h4>Новое ДЗ</h4>
-                        <p>First lesson</p>
-                        <span>еще 5 стр, 10 мин</span>
-                      </div>
-                      <button type="button" class="btn btn-primary" id="start-homework">Выполнить</button>
                     </div>
                   </div>
                 </div>
-                
-               
               </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="main__content pt-4 pb-4">
+              <div class="row d-flex align-items-stretch">
+                <div class="col-md-12 col-lg-6">
+                  <div class="back-to-lessons p-3 h-100">
+                    <h4 class="mb-2">Готовы ли вы вернуться к занятиям?</h4>
+                    <p class="mb-3">
+                      Вы временно приостановили обучение в школе. Мы с радостью поможем
+                      продолжить ваше движение к поставленным целям!
+                    </p>
+                    <button type="button" class="btn btn-primary" id="back-to-lessons">
+                      Вернуться к занятиям!
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                  <div class="lessons p-3 h-100 mt-3 mt-lg-0">
+                    <div class="lessons__info mb-3">
+                      <h4>Новое ДЗ</h4>
+                      <p>First lesson</p>
+                      <span>еще 5 стр, 10 мин</span>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="start-homework">
+                      Выполнить
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </main>
 
           <section class="course p-3 w-100">
-            <div class="top pb-3 d-flex justify-content-between align-items-center">
-              <div class="wprapper d-flex justify-content-between align-items-end">
-                <h3 class="title m-0 mr-3">Текущий курс:</h3>
-                <div class="link-to-current-lesson">
-                  <a href="#" class="current-lesson">Welcome to England</a>
+            <div class="row top pb-3 d-flex justify-content-between align-items-center">
+              <div class="col-lg-8 col-md-8">
+                <div class="wprapper d-flex justify-content-center align-items-lg-end align-items-
+                sm-center align-items-end text-center mb-sm-3 mb-md-0">
+                  <h3 class="title m-0 mr-3">Текущий курс:</h3>
+                  <div class="link-to-current-lesson">
+                    <a href="#" class="current-lesson">Welcome to England</a>
+                  </div>
                 </div>
               </div>
               
-
-              <div class="lessons-passed">
-                Пройденно уроков: <strong class="lesson__curent">1</strong> из <strong class="lesson__total">30</strong>
+              <div class="col-lg-4 col-md-4">
+                <div class="lessons-passed text-center">
+                  Пройденно уроков: <strong class="lesson__curent">1</strong> из
+                  <strong class="lesson__total">30</strong>
+                </div>
               </div>
             </div>
 
             <div class="main__content pt-4 pb-4">
               <h5 class="mb-3 ml-2">Купленные курсы</h5>
-              <div class="cards-lessons d-flex flex-wrap">
-
-                <!-- Card -->
-                <div class="card">
-                  <!-- Card content -->
-                  <div class="card-body">
-                    <!-- Title -->
-                    <h4 class="card-title">Название курса</h4>
-                    <!-- Text -->
-                    <p class="card-text mb-2">Краткое описание. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ad veritatis possimus eum numquam fugit officia nesciunt velit illo cupiditate debitis dolores asperiores, fuga repellendus minima animi!</p>
-                    <!-- Button -->
-                    <a href="#" class="btn btn-primary">Подробнее</a>
+              <div class="row cards-lessons">
+                <div class="col-lg-6">
+                  <!-- Card -->
+                  <div class="card">
+                    <!-- Card content -->
+                    <div class="card-body">
+                      <!-- Title -->
+                      <h4 class="card-title">Название курса</h4>
+                      <!-- Text -->
+                      <p class="card-text mb-2">
+                        Краткое описание. Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Facere ad veritatis possimus eum numquam fugit
+                        officia nesciunt velit illo cupiditate debitis dolores asperiores,
+                        fuga repellendus minima animi!
+                      </p>
+                      <!-- Button -->
+                      <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
                   </div>
+                  <!-- Card -->
                 </div>
-                <!-- Card -->
 
-                <!-- Card -->
-                <div class="card">
-                  <!-- Card content -->
-                  <div class="card-body">
-                    <!-- Title -->
-                    <h4 class="card-title">Название курса 2</h4>
-                    <!-- Text -->
-                    <p class="card-text mb-2">Краткое описание. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ad veritatis possimus eum numquam fugit officia nesciunt velit illo cupiditate debitis dolores asperiores, fuga repellendus minima animi!</p>
-                    <!-- Button -->
-                    <a href="#" class="btn btn-primary">Подробнее</a>
+                <div class="col-lg-6">
+                  <!-- Card -->
+                  <div class="card">
+                    <!-- Card content -->
+                    <div class="card-body">
+                      <!-- Title -->
+                      <h4 class="card-title">Название курса 2</h4>
+                      <!-- Text -->
+                      <p class="card-text mb-2">
+                        Краткое описание. Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Facere ad veritatis possimus eum numquam fugit
+                        officia nesciunt velit illo cupiditate debitis dolores asperiores,
+                        fuga repellendus minima animi!
+                      </p>
+                      <!-- Button -->
+                      <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
                   </div>
+                  <!-- Card -->
                 </div>
-                <!-- Card -->
 
-                <!-- Card -->
-                <div class="card">
-                  <!-- Card content -->
-                  <div class="card-body">
-                    <!-- Title -->
-                    <h4 class="card-title">Название курса 3</h4>
-                    <!-- Text -->
-                    <p class="card-text mb-2">Краткое описание. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ad veritatis possimus eum numquam fugit officia nesciunt velit illo cupiditate debitis dolores asperiores, fuga repellendus minima animi!</p>
-                    <!-- Button -->
-                    <a href="#" class="btn btn-primary">Подробнее</a>
+            
+                  <div class="col-lg-6 mb-2">
+                    <!-- Card -->
+                    <div class="card">
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">Название курса</h4>
+                        <!-- Text -->
+                        <p class="card-text mb-2">
+                          Краткое описание. Lorem ipsum dolor sit, amet consectetur
+                          adipisicing elit. Facere ad veritatis possimus eum numquam fugit
+                          officia nesciunt velit illo cupiditate debitis dolores asperiores,
+                          fuga repellendus minima animi!
+                        </p>
+                        <!-- Button -->
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                      </div>
+                    </div>
+                    <!-- Card -->
                   </div>
-                </div>
-                <!-- Card -->
-
-                <!-- Card -->
-                <div class="card">
-                  <!-- Card content -->
-                  <div class="card-body">
-                    <!-- Title -->
-                    <h4 class="card-title">Название курса 4</h4>
-                    <!-- Text -->
-                    <p class="card-text mb-2">Краткое описание. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ad veritatis possimus eum numquam fugit officia nesciunt velit illo cupiditate debitis dolores asperiores, fuga repellendus minima animi!</p>
-                    <!-- Button -->
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-                <!-- Card -->
-
+                
+                  <div class="col-lg-6">
+                    <!-- Card -->
+                    <div class="card">
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">Название курса 2</h4>
+                        <!-- Text -->
+                        <p class="card-text mb-2">
+                          Краткое описание. Lorem ipsum dolor sit, amet consectetur
+                          adipisicing elit. Facere ad veritatis possimus eum numquam fugit
+                          officia nesciunt velit illo cupiditate debitis dolores asperiores,
+                          fuga repellendus minima animi!
+                        </p>
+                        <!-- Button -->
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                      </div>
+                    </div>
+                    <!-- Card -->
               </div>
-              
             </div>
-
-        </section>
-        <!-- /.course -->
-      </div>
+          </section>
+          <!-- /.course -->
+          
+        </div>
 
         <div class="col-lg-4 col-md-4 col-sm-5 p-0">
-          <aside class="sidebar">
-            
-              <div class="sidebar-top mb-3 ">
-                <div class="sidebar-logo d-flex justify-content-around align-items-center pb-3 pt-3">
-                  <i class="fas fa-user-circle"></i>
+          <div class="container p-sm-0">
+            <aside class="sidebar">
+              <div class="sidebar-top mb-3">
+                <div
+                  class="sidebar-logo d-flex justify-content-center align-items-center p-3 text-center"
+                >
+                  <i class="fas fa-user-circle mr-3 d-none d-lg-block"></i>
                   <h3 class="logo m-0 font-weight-bold">School Language</h3>
                 </div>
                 <!-- /.sidebar-logo -->
-              <div class="user d-flex justify-content-center align-items-center flex-column mt-4">
+                <div
+                  class="user d-flex justify-content-center align-items-center flex-column mt-4"
+                >
                   <div class="user__avatar">
-                    <img src="img/user.png" alt="">
+                    <img src="img/user.png" alt="" />
                   </div>
                   <!-- /.user__avatar -->
-
-                  <div class="user__info d-flex align-items-center flex-column mt-3 pb-2 pt-2">
-
+  
+                  <div
+                    class="user__info d-flex align-items-center flex-column mt-3 pb-2 pt-2"
+                  >
                     <div class="user__language text-info">
                       Английский язык
                     </div>
-
+  
                     <a class="user__more d-flex align-items-center">
                       <div class="name__name font-weight-bolder mr-3">Николай</div>
                       <i class="fas fa-caret-down"></i>
                     </a>
                     <!-- /.user__more -->
-
                   </div>
                   <!-- /.user__info -->
                 </div>
                 <!-- /.user -->
               </div>
               <!-- /.sidebar-top -->
-
+  
               <nav class="navigation">
                 <ul class="menu">
-                  <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Личный кабинет</a>
-                  <span class="line"></span>
-                </li>
-                <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Витрина курсов</a>
-                  <span class="line"></span>
-                </li>
-                <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Семья и курсы</a>
-                  <span class="line"></span>
-                </li>
+                  <li class="menu__item p-2">
+                    <a href="#">Личный кабинет</a>
+                  </li>
+                  <li class="menu__item p-2">
+                    <a href="#">Витрина курсов</a>
+                  </li>
+                  <li class="menu__item p-2">
+                    <a href="#">Семья и курсы</a>
+                  </li>
                 </ul>
                 <!-- /.menu -->
-
-                <p class="menu__title m-0 pt-3 pr-3 pl-3 text-left">Тренеруйся</p>
+  
+                <p class="menu__title m-0 pb-0 pt-3 pl-3 text-left">Тренеруйся</p>
                 <ul class="menu">
-                  <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Разговорный клуб</a>
-                  <span class="line"></span>
-                </li>
-                <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Домашнее задание</a>
-                  <span class="line"></span>
-                </li>
-                <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Тесты</a>
-                  <span class="line"></span>
-                </li>
-                <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Граматика</a>
-                  <span class="line"></span>
-                </li>
-                <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Видеопрактика</a>
-                  <span class="line"></span>
-                </li>
-                </ul>
-                <!-- /.menu --> 
-
-                <p class="menu__title m-0 pt-3 pr-3 pl-3 text-left">Моя программа</p>
-                <ul class="menu">
-                  <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Мои заметки</a>
-                  <span class="line"></span>
-                </li>
-                  <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                    <span class="line"></span>
-                    <a href="#">Мой словарь</a>
-                    <span class="line"></span>
+                  <li class="menu__item p-2">
+                    <a href="#">Разговорный клуб</a>
                   </li>
-                  <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                    <span class="line"></span>
+                  <li class="menu__item p-2">
+                    <a href="#">Домашнее задание</a>
+                  </li>
+                  <li class="menu__item p-2">
+                    <a href="#">Тесты</a>
+                  </li>
+                  <li class="menu__item p-2">
+                    <a href="#">Граматика</a>
+                  </li>
+                  <li class="menu__item p-2">
+                    <a href="#">Видеопрактика</a>
+                  </li>
+                </ul>
+                <!-- /.menu -->
+  
+                <p class="menu__title m-0 p-3 text-left">Моя программа</p>
+                <ul class="menu">
+                  <li class="menu__item p-2">
+                    <a href="#">Мои заметки</a>
+                  </li>
+                  <li class="menu__item p-2">
+                    <a href="#">Мой словарь</a>
+                  </li>
+                  <li class="menu__item p-2">
                     <a href="#">Мое портфолио</a>
-                    <span class="line"></span>
                   </li>
                 </ul>
                 <!-- /.menu -->
               </nav>
               <!-- /.navigation -->
-          </aside>
-          <!-- /.sidebar -->
+            </aside>
+            <!-- /.sidebar -->
+          </div>
+          
         </div>
-
       </div>
-      <!-- /.row-->   
-    
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- /.row-->
+
+      <!-- SCRIPTS -->
+      <!-- JQuery -->
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+    </div>
   </body>
 </html>
