@@ -33,9 +33,9 @@
     <!-- Side navigation -->
     <div class="container pt-3 pb-3 d-flex">
       <div class="row">
-        <div class="col-md-9 pr-2 ">
+        <div class="col-lg-8 col-md-8 col-sm-7 pr-2 ">
           <main class="main p-3 w-100 mb-3">
-              <div class="main-top d-flex justify-content-between align-items-center pb-3">
+              <div class="top d-flex justify-content-between align-items-center pb-3">
                 <h1 class="title m-0">Личный кабинет</h1>
 
                 <div class="teacher d-flex justify-content-between align-items-center mr-2">
@@ -55,60 +55,128 @@
                   </div>
                 </div>
               </div>
-              <div class="main__content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aspernatur quibusdam maiores quos numquam error, voluptas assumenda nesciunt non nulla tempore maxime inventore modi minima officia a, tempora soluta debitis.
-                  Sed incidunt qui sapiente magni hic, iure, pariatur labore architecto, porro suscipit eum repellat animi corrupti. Aperiam facilis repellendus nesciunt debitis eum, pariatur libero labore earum accusamus deserunt ullam mollitia!
-                  Esse architecto expedita ea minus quasi vero. Omnis quod reprehenderit enim, unde fuga praesentium dolorem et cumque eum. Nesciunt, quas placeat ducimus eius optio in a expedita ipsam sit accusantium!
-                  Enim, magni? Alias sint recusandae commodi inventore doloribus ipsum quasi dolores blanditiis ratione impedit excepturi aspernatur, eaque quos, ipsam illo nemo qui! Harum, quasi. Cupiditate corrupti nam atque a obcaecati.
-                  Praesentium, ipsam. Quos, excepturi nihil. Reprehenderit, sed, veritatis nobis consectetur voluptatibus sapiente eaque corporis, vero sit explicabo nam ducimus quos quaerat accusamus natus excepturi laboriosam maiores? Est beatae tempora vero.</p>
+              <div class="main__content pt-4 pb-4">
+                <div class="row d-flex align-items-stretch">
+                  <div class="col-md-8">
+                    <div class="back-to-lessons p-2">
+                      <h4 class="mb-2">Готовы ли вы вернуться к занятиям?</h4>
+                      <p class="mb-3">Вы временно приостановили обучение в школе. Мы с радостью поможем продолжить ваше движение к поставленным целям!</p>
+                      <button type="button" class="btn btn-primary" id="back-to-lessons">Вернуться к занятиям!</button>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="lessons p-2 mb-2 h-100">
+                      <div class="lessons__info mb-3">
+                        <h4>Новое ДЗ</h4>
+                        <p>First lesson</p>
+                        <span>еще 5 стр, 10 мин</span>
+                      </div>
+                      <button type="button" class="btn btn-primary" id="start-homework">Выполнить</button>
+                    </div>
+                  </div>
+                </div>
+                
+               
               </div>
           </main>
 
           <section class="course p-3 w-100">
-            <div class="main-top d-flex justify-content-between align-items-center pb-3">
-              <h1 class="title m-0">Личный кабинет</h1>
-
-              <div class="teacher d-flex justify-content-between align-items-center mr-2">
-                <div class="teacher__avatar mr-3">
-                  <i class="fas fa-user-graduate"></i>
-                </div>
-
-                <div class="teacher-info d-flex flex-column">
-                  <div class="teacher__name">Преподаватель <span id="teacher__name">Роман</span> </div>
-                  <div class="teacher__link">
-                    <ul class="link__list d-flex justify-content-between align-items-center">
-                      <li class="link__item"><a href="#">В профиль</a></li>
-                      <span class="circle"></span>
-                      <li class="link__item"><a href="#">Сменить</a></li>
-                    </ul>
-                  </div> 
+            <div class="top pb-3 d-flex justify-content-between align-items-center">
+              <div class="wprapper d-flex justify-content-between align-items-end">
+                <h3 class="title m-0 mr-3">Текущий курс:</h3>
+                <div class="link-to-current-lesson">
+                  <a href="#" class="current-lesson">Welcome to England</a>
                 </div>
               </div>
+              
+
+              <div class="lessons-passed">
+                Пройденно уроков: <strong class="lesson__curent">1</strong> из <strong class="lesson__total">30</strong>
+              </div>
             </div>
-            <div class="main__content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aspernatur quibusdam maiores quos numquam error, voluptas assumenda nesciunt non nulla tempore maxime inventore modi minima officia a, tempora soluta debitis.
-                Sed incidunt qui sapiente magni hic, iure, pariatur labore architecto, porro suscipit eum repellat animi corrupti. Aperiam facilis repellendus nesciunt debitis eum, pariatur libero labore earum accusamus deserunt ullam mollitia!
-                Esse architecto expedita ea minus quasi vero. Omnis quod reprehenderit enim, unde fuga praesentium dolorem et cumque eum. Nesciunt, quas placeat ducimus eius optio in a expedita ipsam sit accusantium!
-                Enim, magni? Alias sint recusandae commodi inventore doloribus ipsum quasi dolores blanditiis ratione impedit excepturi aspernatur, eaque quos, ipsam illo nemo qui! Harum, quasi. Cupiditate corrupti nam atque a obcaecati.
-                Praesentium, ipsam. Quos, excepturi nihil. Reprehenderit, sed, veritatis nobis consectetur voluptatibus sapiente eaque corporis, vero sit explicabo nam ducimus quos quaerat accusamus natus excepturi laboriosam maiores? Est beatae tempora vero.</p>
+
+            <div class="main__content pt-4 pb-4">
+              <h5 class="mb-3 ml-2">Купленные курсы</h5>
+              <div class="cards-lessons d-flex flex-wrap">
+
+                <!-- Card -->
+                <div class="card">
+                  <!-- Card content -->
+                  <div class="card-body">
+                    <!-- Title -->
+                    <h4 class="card-title">Название курса</h4>
+                    <!-- Text -->
+                    <p class="card-text mb-2">Краткое описание. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ad veritatis possimus eum numquam fugit officia nesciunt velit illo cupiditate debitis dolores asperiores, fuga repellendus minima animi!</p>
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                  </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div class="card">
+                  <!-- Card content -->
+                  <div class="card-body">
+                    <!-- Title -->
+                    <h4 class="card-title">Название курса 2</h4>
+                    <!-- Text -->
+                    <p class="card-text mb-2">Краткое описание. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ad veritatis possimus eum numquam fugit officia nesciunt velit illo cupiditate debitis dolores asperiores, fuga repellendus minima animi!</p>
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                  </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div class="card">
+                  <!-- Card content -->
+                  <div class="card-body">
+                    <!-- Title -->
+                    <h4 class="card-title">Название курса 3</h4>
+                    <!-- Text -->
+                    <p class="card-text mb-2">Краткое описание. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ad veritatis possimus eum numquam fugit officia nesciunt velit illo cupiditate debitis dolores asperiores, fuga repellendus minima animi!</p>
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                  </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div class="card">
+                  <!-- Card content -->
+                  <div class="card-body">
+                    <!-- Title -->
+                    <h4 class="card-title">Название курса 4</h4>
+                    <!-- Text -->
+                    <p class="card-text mb-2">Краткое описание. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ad veritatis possimus eum numquam fugit officia nesciunt velit illo cupiditate debitis dolores asperiores, fuga repellendus minima animi!</p>
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                  </div>
+                </div>
+                <!-- Card -->
+
+              </div>
+              
             </div>
+
         </section>
         <!-- /.course -->
-        </div>
+      </div>
 
-        <div class="col-md-3 p-0">
+        <div class="col-lg-4 col-md-4 col-sm-5 p-0">
           <aside class="sidebar">
             
-              <div class="sidebar-top mb-3">
+              <div class="sidebar-top mb-3 ">
                 <div class="sidebar-logo d-flex justify-content-around align-items-center pb-3 pt-3">
                   <i class="fas fa-user-circle"></i>
                   <h3 class="logo m-0 font-weight-bold">School Language</h3>
                 </div>
-                
+                <!-- /.sidebar-logo -->
               <div class="user d-flex justify-content-center align-items-center flex-column mt-4">
                   <div class="user__avatar">
                     <img src="img/user.png" alt="">
                   </div>
+                  <!-- /.user__avatar -->
 
                   <div class="user__info d-flex align-items-center flex-column mt-3 pb-2 pt-2">
 
@@ -120,11 +188,14 @@
                       <div class="name__name font-weight-bolder mr-3">Николай</div>
                       <i class="fas fa-caret-down"></i>
                     </a>
+                    <!-- /.user__more -->
 
                   </div>
+                  <!-- /.user__info -->
                 </div>
+                <!-- /.user -->
               </div>
-
+              <!-- /.sidebar-top -->
 
               <nav class="navigation">
                 <ul class="menu">
@@ -144,6 +215,7 @@
                   <span class="line"></span>
                 </li>
                 </ul>
+                <!-- /.menu -->
 
                 <p class="menu__title m-0 pt-3 pr-3 pl-3 text-left">Тренеруйся</p>
                 <ul class="menu">
@@ -173,6 +245,7 @@
                   <span class="line"></span>
                 </li>
                 </ul>
+                <!-- /.menu --> 
 
                 <p class="menu__title m-0 pt-3 pr-3 pl-3 text-left">Моя программа</p>
                 <ul class="menu">
@@ -181,23 +254,26 @@
                   <a href="#">Мои заметки</a>
                   <span class="line"></span>
                 </li>
-                <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Мой словарь</a>
-                  <span class="line"></span>
-                </li>
-                <li class="menu__item d-flex justify-content-around align-items-center p-2">
-                  <span class="line"></span>
-                  <a href="#">Мое портфолио</a>
-                  <span class="line"></span>
-                </li>
+                  <li class="menu__item d-flex justify-content-around align-items-center p-2">
+                    <span class="line"></span>
+                    <a href="#">Мой словарь</a>
+                    <span class="line"></span>
+                  </li>
+                  <li class="menu__item d-flex justify-content-around align-items-center p-2">
+                    <span class="line"></span>
+                    <a href="#">Мое портфолио</a>
+                    <span class="line"></span>
+                  </li>
                 </ul>
+                <!-- /.menu -->
               </nav>
+              <!-- /.navigation -->
           </aside>
+          <!-- /.sidebar -->
         </div>
 
       </div>
-   
+      <!-- /.row-->   
     
     <!-- SCRIPTS -->
     <!-- JQuery -->
