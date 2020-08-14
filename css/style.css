@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 18%,
+    rgba(129, 194, 250, 1) 84%
+  ); */
+  background: rgb(204, 204, 204);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -----------------------------------------------------
+
+                    SIDEBAR
+
+ -------------------------------------------------------*/
+
+.sidebar {
+  height: 100%;
+  width: 100%;
+  color: #000;
+}
+
+.sidebar-top {
+  background: #fff;
+  border-top-right-radius: 10px;
+  /* border-bottom-right-radius: 10px; */
+}
+
+.sidebar-logo {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.sidebar-top .fa-user-circle {
+  font-size: 1.7rem;
+}
+
+.user {
+  background: #fff;
+}
+
+.user__name {
+  font-size: 1.2rem;
+}
+
+.user__avatar > img {
+  width: 75px;
+  border-radius: 50%;
+}
+
+.navigation {
+  background: #fff;
+}
+
+.menu {
+  font-size: 1.2rem;
+  color: #b4b9bf;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.menu__item span.line {
+  width: 10px;
+  height: 1px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #dad7c5;
+  opacity: 0;
+}
+
+.menu__item:hover > span.line {
+  opacity: 1;
+}
+
+.main {
+  width: 100%;
+  background: #fff;
+  border-top-left-radius: 10px;
+  /* border-bottom-left-radius: 10px; */
+}
+
+.main-top {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.menu__title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #bbb9bf;
+}
+
+.teacher .teacher__avatar {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.teacher .teacher__avatar .fa-user-graduate {
+  font-size: 1.7rem;
+  padding: 10px;
+}
+
+.teacher__link {
+  color: #bdbdbd;
+}
+
+.link__list span.circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #bdbdbd;
+  border-radius: 50%;
+}
+
+.link__item {
+  border-bottom: 1px dotted #bdbdbd;
+}
+
+.course {
+  background: #fff;
+}
