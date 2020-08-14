@@ -93,6 +93,10 @@ p {
   margin-bottom: 15px;
 }
 
+.navigation {
+  padding: 15px 0;
+}
+
 .menu__item span.line {
   width: 10px;
   height: 1px;
