@@ -92,22 +92,8 @@ p {
   font-weight: bold;
 }
 
-<<<<<<< HEAD
 .menu__item a {
   padding-left: 20px;
-=======
-.navigation {
-  padding: 15px 0;
-}
-
-.menu__item span.line {
-  width: 10px;
-  height: 1px;
-  display: inline-block;
-  border-radius: 50%;
-  background: #dad7c5;
-  opacity: 0;
->>>>>>> 6ef2e227242f86537a105bd65244591c3ce03df0
 }
 
 .menu__item:not(:first-child) {
