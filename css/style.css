@@ -90,9 +90,12 @@ p {
   font-size: 1.2rem;
   color: #b4b9bf;
   font-weight: bold;
-  margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
+.menu__item a {
+  padding-left: 20px;
+=======
 .navigation {
   padding: 15px 0;
 }
@@ -104,19 +107,23 @@ p {
   border-radius: 50%;
   background: #dad7c5;
   opacity: 0;
+>>>>>>> 6ef2e227242f86537a105bd65244591c3ce03df0
 }
 
-.menu__item:hover > span.line {
-  opacity: 1;
+.menu__item:not(:first-child) {
+  border-top: 1px solid gray;
 }
+
+.menu__item:hover {
+  background: rgb(252, 117, 39);
+  cursor: pointer;
+  color: #fff;
+}
+
 .menu__title {
   font-size: 0.9rem;
   text-transform: uppercase;
   color: #bbb9bf;
-}
-
-.navigation {
-  padding: 15px 0;
 }
 
 /* -----------------------------------------------------
@@ -197,8 +204,6 @@ p {
 }
 
 .card {
-  width: 48%;
-  margin-bottom: 10px;
-  margin-right: 7px;
-  margin-left: 7px;
+  width: 100%;
+  margin-bottom: 15px;
 }
